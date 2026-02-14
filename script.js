@@ -29,49 +29,50 @@ const chihiroLyrics = [
   { text: "I hope it's not for sure, can you open up the door?", delay: 4400 },
 
   // --- First "Did You Take" Bridge ---
-  { text: "Did you take my love away from me?", delay: 18000 }, // long instrumental before chorus
-  { text: "Me", delay: 4000 },
+
+  { text: "Did you take my love away from me?", delay: 17000 },
+  { text: "Me", delay: 18000 }, // Long instrumental bridge/chorus transition
 
   // --- Verse 2 ---
-  { text: "Saw your seat at the counter when I looked away", delay: 4600 },
-  { text: "Saw you turn around, but it wasn't your face", delay: 4600 },
-  { text: "Said, 'I need to be alone now, I'm takin' a break'", delay: 4600 },
-  { text: "How come when I returned, you were gone away?", delay: 5800 },
+  { text: "Saw your seat at the counter when I looked away", delay: 4364 },
+  { text: "Saw you turn around, but it wasn't your face", delay: 4364 },
+  { text: "Said, 'I need to be alone now, I'm takin' a break'", delay: 4364 },
+  { text: "How come when I returned, you were gone away?", delay: 8728 }, // Extra space before build-up
 
   // --- Build-up Section ---
-  { text: "I don't, I don't know why I called", delay: 4400 },
-  { text: "I don't know you at all", delay: 4200 },
-  { text: "I don't know you, not at all", delay: 4800 },
-  { text: "I don't, I don't know why I called", delay: 4400 },
-  { text: "I don't know you at all", delay: 4200 },
-  { text: "I don't know you", delay: 21500 }, // synth swell
+  { text: "I don't, I don't know why I called", delay: 4364 },
+  { text: "I don't know you at all", delay: 4364 },
+  { text: "I don't know you, not at all", delay: 4364 },
+  { text: "I don't, I don't know why I called", delay: 4364 },
+  { text: "I don't know you at all", delay: 4364 },
+  { text: "I don't know you", delay: 21500 }, // Deep synth swell transition
 
   // --- Second Chorus ---
-  { text: "Did you take my love away from me?", delay: 11200 }, // drum re-entry
-  { text: "Me", delay: 4000 },
+  { text: "Did you take my love away from me?", delay: 11200 },
+  { text: "Me", delay: 4400 },
 
   // --- Final Verse ---
-  { text: "And that's when you found me", delay: 4400 },
-  { text: "I was waitin' in the garden", delay: 4400 },
-  { text: "Contemplatin', beg your pardon", delay: 4400 },
-  { text: "But there's a part of me that recognizes you", delay: 4800 },
-  { text: "Do you feel it too?", delay: 4400 },
-  { text: "When you told me it was serious, were you serious?", delay: 4600 },
-  { text: "They told me they were only curious", delay: 4200 },
-  { text: "Now it's serious", delay: 5200 },
+  { text: "And that's when you found me", delay: 4364 },
+  { text: "I was waitin' in the garden", delay: 4364 },
+  { text: "Contemplatin', beg your pardon", delay: 4364 },
+  { text: "But there's a part of me that recognizes you", delay: 4364 },
+  { text: "Do you feel it too?", delay: 4364 },
+  { text: "When you told me it was serious, were you serious?", delay: 4364 },
+  { text: "They told me they were only curious", delay: 4364 },
+  { text: "Now it's serious", delay: 8728 },
 
-  // --- Outro ---
-  { text: "Open up the door, can you open up the door?", delay: 4200 },
-  { text: "I know you said before you can't cope with anymore", delay: 4200 },
+  // --- Outro --- (Speeds up emotionally, phrasing is tighter)
+  { text: "Open up the door, can you open up the door?", delay: 4364 },
+  { text: "I know you said before you can't cope with anymore", delay: 4364 },
   {
     text: "You told me it was war, said you'd show me what's in store",
-    delay: 4200,
+    delay: 4364,
   },
-  { text: "I hope it's not for sure, can you open up the door?", delay: 11800 },
-  { text: "Wringing my hands in my lap", delay: 4600 },
-  { text: "And you tell me it's all been a trap", delay: 4600 },
-  { text: "And you don't know if you'll make it back", delay: 4600 },
-  { text: 'I say, "No, don\'t say that"', delay: 4600 },
+  { text: "I hope it's not for sure, can you open up the door?", delay: 8728 },
+  { text: "Wringing my hands in my lap", delay: 4364 },
+  { text: "And you tell me it's all been a trap", delay: 4364 },
+  { text: "And you don't know if you'll make it back", delay: 4364 },
+  { text: 'I say, "No, don\'t say that"', delay: 4364 },
   { text: "Hm-hm", delay: 5000 },
 ];
 
