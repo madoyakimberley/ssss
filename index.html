@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Three Dates I Owe You</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+  <body>
+    <!-- HERO -->
+    <section class="hero fade-slide-in">
+      <h1>Three Dates I Owe You</h1>
+      <p>I freeze sometimes… but I want this to be special for you.</p>
+    </section>
+
+    <!-- DATE CARDS -->
+    <section class="dates">
+      <div class="card locked" id="date1">
+        <h2>🍦 Date One</h2>
+        <p>Ice cream & a nature walk</p>
+        <span class="lock-text">Unlocks on 14th February</span>
+      </div>
+      <div class="card locked" id="date2">
+        <h2>🌙 Date Two</h2>
+        <p>Coming soon</p>
+        <span class="lock-text">Locked</span>
+      </div>
+      <div class="card locked" id="date3">
+        <h2>🌅 Date Three</h2>
+        <p>The one I’m still dreaming about</p>
+        <span class="lock-text">Locked</span>
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section id="details" class="details hidden"></section>
+
+    <!-- MAP -->
+    <section id="map-section" class="map-section hidden">
+      <div id="map"></div>
+    </section>
+
+    <!-- AUDIO -->
+    <audio
+      id="chihiro"
+      src="/Billie Eilish - CHIHIRO (Lyrics) - Dan Music.mp3"
+    ></audio>
+
+    <!-- Lyrics Box -->
+    <section id="lyrics-box" class="hidden">
+      <div id="lyrics-content"></div>
+    </section>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
