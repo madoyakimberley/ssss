@@ -12,61 +12,73 @@ const lyricsContent = document.getElementById("lyrics-content");
 
 // Full lyrics with delays
 const chihiroLyrics = [
-  { text: "To take my love away", delay: 4200 },
-  { text: "When I come back around, will I know what to say?", delay: 4500 },
-  { text: "Said you won't forget my name", delay: 3800 },
-  { text: "Not today, not tomorrow", delay: 3800 },
-  { text: "Kinda strange, feelin' sorrow", delay: 3800 },
-  { text: "I got change (yup), you could borrow (borrow)", delay: 4200 },
+  { text: "To take my love away", delay: 4400 },
+  { text: "When I come back around, will I know what to say?", delay: 4600 },
+  { text: "Said you won't forget my name", delay: 4000 },
+  { text: "Not today, not tomorrow", delay: 4000 },
+  { text: "Kinda strange, feelin' sorrow", delay: 4000 },
+  { text: "I got change (yup), you could borrow (borrow)", delay: 4400 },
   { text: "When I come back around, will I know what to say?", delay: 4800 },
-  { text: "Not today, maybe tomorrow", delay: 4500 },
-  { text: "Open up the door, can you open up the door?", delay: 4000 },
-  { text: "I know you said before you can't cope with anymore", delay: 4000 },
+  { text: "Not today, maybe tomorrow", delay: 4600 },
+  { text: "Open up the door, can you open up the door?", delay: 4200 },
+  { text: "I know you said before you can't cope with anymore", delay: 4200 },
   {
     text: "You told me it was war, said you'd show me what's in store",
-    delay: 4000,
+    delay: 4200,
   },
-  { text: "I hope it's not for sure, can you open up the door?", delay: 5000 },
+  { text: "I hope it's not for sure, can you open up the door?", delay: 4400 },
+
+  // --- First "Did You Take" Bridge ---
   { text: "Did you take", delay: 1800 },
   { text: "My love away", delay: 1800 },
-  { text: "From me?", delay: 2000 },
-  { text: "Me", delay: 2000 },
-  { text: "Me", delay: 12500 },
-  { text: "Saw your seat at the counter when I looked away", delay: 4500 },
-  { text: "Saw you turn around, but it wasn't your face", delay: 4500 },
-  { text: "Said, \"I need to be alone now, I'm takin' a break\"", delay: 4500 },
-  { text: "How come when I returned, you were gone away?", delay: 6500 },
-  { text: "I don't, I don't know why I called", delay: 4200 },
+  { text: "From me?", delay: 1800 },
+  { text: "Me", delay: 1800 },
+  { text: "Me", delay: 13500 }, // Calibrated to the long instrumental drop
+
+  // --- Verse 2 ---
+  { text: "Saw your seat at the counter when I looked away", delay: 4600 },
+  { text: "Saw you turn around, but it wasn't your face", delay: 4600 },
+  { text: "Said, \"I need to be alone now, I'm takin' a break\"", delay: 4600 },
+  { text: "How come when I returned, you were gone away?", delay: 5800 },
+
+  // --- Build-up Section ---
+  { text: "I don't, I don't know why I called", delay: 4400 },
   { text: "I don't know you at all", delay: 4200 },
-  { text: "I don't know you", delay: 4200 },
-  { text: "Not at all", delay: 4200 },
-  { text: "I don't, I don't know why I called", delay: 4200 },
+  { text: "I don't know you", delay: 3800 },
+  { text: "Not at all", delay: 4800 },
+  { text: "I don't, I don't know why I called", delay: 4400 },
   { text: "I don't know you at all", delay: 4200 },
-  { text: "I don't know you", delay: 20000 },
+  { text: "I don't know you", delay: 21500 }, // Calibrated to the massive synth swell
+
+  // --- Second "Did You Take" Bridge ---
   { text: "Did you take", delay: 1800 },
   { text: "My love away", delay: 1800 },
-  { text: "From me?", delay: 2000 },
-  { text: "Me", delay: 10500 },
-  { text: "And that's when you found me", delay: 4500 },
-  { text: "I was waitin' in the garden", delay: 4500 },
-  { text: "Contemplatin', beg your pardon", delay: 4500 },
-  { text: "But there's a part of me that recognizes you", delay: 4500 },
-  { text: "Do you feel it too?", delay: 4500 },
+  { text: "From me?", delay: 1800 },
+  { text: "Me", delay: 11200 }, // Calibrated to the drum re-entry
+
+  // --- Final Verse ---
+  { text: "And that's when you found me", delay: 4400 },
+  { text: "I was waitin' in the garden", delay: 4400 },
+  { text: "Contemplatin', beg your pardon", delay: 4400 },
+  { text: "But there's a part of me that recognizes you", delay: 4800 },
+  { text: "Do you feel it too?", delay: 4400 },
   { text: "When you told me it was serious", delay: 4200 },
   { text: "Were you serious? Mm", delay: 4200 },
   { text: "They told me they were only curious", delay: 4200 },
-  { text: "Now it's serious, mm", delay: 5000 },
-  { text: "Open up the door, can you open up the door?", delay: 4000 },
-  { text: "I know you said before you can't cope with anymore", delay: 4000 },
+  { text: "Now it's serious, mm", delay: 5200 },
+
+  // --- Outro ---
+  { text: "Open up the door, can you open up the door?", delay: 4200 },
+  { text: "I know you said before you can't cope with anymore", delay: 4200 },
   {
     text: "You told me it was war, said you'd show me what's in store",
-    delay: 4000,
+    delay: 4200,
   },
-  { text: "I hope it's not for sure, can you open up the door?", delay: 11000 },
-  { text: "Wringing my hands in my lap", delay: 4500 },
-  { text: "And you tell me it's all been a trap", delay: 4500 },
-  { text: "And you don't know if you'll make it back", delay: 4500 },
-  { text: 'I say, "No, don\'t say that"', delay: 4500 },
+  { text: "I hope it's not for sure, can you open up the door?", delay: 11800 }, // Calibrated to the final fade-in
+  { text: "Wringing my hands in my lap", delay: 4600 },
+  { text: "And you tell me it's all been a trap", delay: 4600 },
+  { text: "And you don't know if you'll make it back", delay: 4600 },
+  { text: 'I say, "No, don\'t say that"', delay: 4600 },
   { text: "Hm-hm", delay: 5000 },
 ];
 
