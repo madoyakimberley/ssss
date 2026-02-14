@@ -29,7 +29,7 @@ const chihiroLyrics = [
   { text: "I hope it's not for sure, can you open up the door?", delay: 4400 },
 
   // --- First "Did You Take" Bridge ---
-  { text: "Did you take my love away from me?", delay: 13000 }, // long instrumental before chorus
+  { text: "Did you take my love away from me?", delay: 15000 }, // long instrumental before chorus
   { text: "Me", delay: 4000 },
 
   // --- Verse 2 ---
