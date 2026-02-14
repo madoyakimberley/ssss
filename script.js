@@ -12,7 +12,23 @@ const lyricsContent = document.getElementById("lyrics-content");
 
 // Full lyrics with delays
 const chihiroLyrics = [
-  // --- First Chorus ---
+  { text: "To take my love away", delay: 4400 },
+  { text: "When I come back around, will I know what to say?", delay: 4600 },
+  { text: "Said you won't forget my name", delay: 4000 },
+  { text: "Not today, not tomorrow", delay: 4000 },
+  { text: "Kinda strange, feelin' sorrow", delay: 4000 },
+  { text: "I got change (yup), you could borrow (borrow)", delay: 4400 },
+  { text: "When I come back around, will I know what to say?", delay: 4800 },
+  { text: "Not today, maybe tomorrow", delay: 4600 },
+  { text: "Open up the door, can you open up the door?", delay: 4200 },
+  { text: "I know you said before you can't cope with anymore", delay: 4200 },
+  {
+    text: "You told me it was war, said you'd show me what's in store",
+    delay: 4200,
+  },
+  { text: "I hope it's not for sure, can you open up the door?", delay: 4400 },
+
+  // --- First "Did You Take" Bridge ---
   { text: "Did you take my love away from me?", delay: 13000 }, // long instrumental before chorus
   { text: "Me", delay: 4000 },
 
